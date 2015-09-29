@@ -4,4 +4,7 @@
   <artifactId>arquillian-tests</artifactId>
   <version>DYNAMIC-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <modules>
+  	<module>arquillian-cdi</module>
+  </modules>
 </project>
