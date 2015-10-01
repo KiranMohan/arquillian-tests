@@ -6,7 +6,7 @@
 		<artifactId>arquillian-tests</artifactId>
 		<version>DYNAMIC-SNAPSHOT</version>
 	</parent>
-	<artifactId>arquillian-cdi</artifactId>
+	<artifactId>arquillian-tests-cdi</artifactId>
 	<name>Arquillian CDI tests</name>
 	<description>Arquillian CDI tests from arquillian.org getting started tutorials</description>
 	<dependencies>

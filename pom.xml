@@ -6,7 +6,7 @@
 	<version>DYNAMIC-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>arquillian-cdi</module>
+		<module>arquillian-tests-cdi</module>
 	</modules>
 	<dependencies>
 		<dependency>
