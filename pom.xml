@@ -55,6 +55,7 @@
 				<version>1.7.12</version>
 				<scope>test</scope>
 			</dependency>
+			<!-- start: dependencies to test in glassfish embedded environment -->
 			<dependency>
 				<groupId>org.jboss.arquillian.container</groupId>
 				<artifactId>arquillian-glassfish-embedded-3.1</artifactId>
@@ -66,6 +67,15 @@
 				<artifactId>glassfish-embedded-all</artifactId>
 				<version>4.1</version>
 			</dependency>
+			<!-- end: dependencies to test in glassfish embedded environment -->
+			<!-- start: dependencies to test in wildfly appserver remotely -->
+			<dependency>
+				<groupId>org.wildfly.arquillian</groupId>
+				<artifactId>wildfly-arquillian-container-remote</artifactId>
+				<version>1.1.0.Alpha1</version>
+				<scope>test</scope>
+			</dependency>
+			<!-- end: dependencies to test in wildfly appserver remotely -->
 		</dependencies>
 	</dependencyManagement>
 	<build>

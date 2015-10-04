@@ -24,9 +24,9 @@
 	<profiles>
 		<profile>
 			<id>arquillian-weld-ee-embedded</id>
-			<activation>
+<!-- 			<activation>
 				<activeByDefault>true</activeByDefault>
-			</activation>
+			</activation> -->
 			<dependencies>
 				<dependency>
 					<groupId>org.jboss.spec</groupId>
@@ -63,6 +63,27 @@
 					<groupId>org.glassfish.main.extras</groupId>
 					<artifactId>glassfish-embedded-all</artifactId>
 					<scope>provided</scope>
+				</dependency>
+			</dependencies>
+		</profile>
+		<profile>
+			<id>arquillian-wildfly-remote</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.jboss.spec</groupId>
+					<artifactId>jboss-javaee-7.0</artifactId>
+					<type>pom</type>
+					<scope>provided</scope>
+				</dependency>
+				<dependency>
+					<groupId>org.wildfly.arquillian</groupId>
+					<artifactId>wildfly-arquillian-container-remote</artifactId>
+					<scope>test</scope>
+				</dependency>
+				<dependency>
+					<groupId>org.jboss.arquillian.protocol</groupId>
+					<artifactId>arquillian-protocol-servlet</artifactId>
+					<scope>test</scope>
 				</dependency>
 			</dependencies>
 		</profile>
