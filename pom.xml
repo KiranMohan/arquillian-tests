@@ -7,6 +7,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>arquillian-tests-cdi</module>
+		<module>arquillian-tests-ejb-cdi</module>
 	</modules>
 	<dependencies>
 		<dependency>
@@ -50,6 +51,12 @@
 				<scope>test</scope>
 			</dependency>
 			<dependency>
+				<groupId>javax.enterprise</groupId>
+				<artifactId>cdi-api</artifactId>
+				<version>1.2</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
 				<version>1.7.12</version>
@@ -68,6 +75,14 @@
 				<version>4.1</version>
 			</dependency>
 			<!-- end: dependencies to test in glassfish embedded environment -->
+			<!-- start: dependencies to test in glassfish remote environment -->
+			<dependency>
+				<groupId>org.jboss.arquillian.container</groupId>
+				<artifactId>arquillian-glassfish-remote-3.1</artifactId>
+				<version>1.0.0.CR4</version>
+				<scope>test</scope>
+			</dependency>
+			<!-- end: dependencies to test in glassfish remote environment -->
 			<!-- start: dependencies to test in wildfly appserver remotely -->
 			<dependency>
 				<groupId>org.wildfly.arquillian</groupId>
