@@ -63,6 +63,12 @@
 				<version>1.7.12</version>
 				<scope>test</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-jpamodelgen</artifactId>
+				<version>5.0.2.Final</version>
+				<scope>provided</scope>
+			</dependency>
 			<!-- start: dependencies to test in glassfish embedded environment -->
 			<dependency>
 				<groupId>org.jboss.arquillian.container</groupId>
@@ -73,6 +79,12 @@
 			<dependency>
 				<groupId>org.glassfish.main.extras</groupId>
 				<artifactId>glassfish-embedded-all</artifactId>
+				<version>4.1</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.main.extras</groupId>
+				<artifactId>glassfish-embedded-web</artifactId>
 				<version>4.1</version>
 				<scope>test</scope>
 			</dependency>
@@ -93,12 +105,6 @@
 				<scope>test</scope>
 			</dependency>
 			<!-- end: dependencies to test in wildfly appserver remotely -->
-			<dependency>
-				<groupId>org.glassfish.main.extras</groupId>
-				<artifactId>glassfish-embedded-web</artifactId>
-				<version>4.1</version>
-				<scope>test</scope>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
