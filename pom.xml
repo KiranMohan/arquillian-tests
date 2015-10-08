@@ -8,6 +8,7 @@
 	<modules>
 		<module>arquillian-tests-cdi</module>
 		<module>arquillian-tests-ejb-cdi</module>
+		<module>arquillian-tests-jpa</module>
 	</modules>
 	<dependencies>
 		<dependency>
