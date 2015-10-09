@@ -66,5 +66,25 @@
 				</plugins>
 			</build>
 		</profile>
+		<profile>
+			<id>arquillian-wildfly-remote</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.wildfly.arquillian</groupId>
+					<artifactId>wildfly-arquillian-container-remote</artifactId>
+					<scope>test</scope>
+				</dependency>
+			</dependencies>
+			<build>
+				<testResources>
+					<testResource>
+						<directory>src/test/resources</directory>
+					</testResource>
+					<testResource>
+						<directory>src/test/resources-jbossas-managed</directory>
+					</testResource>
+				</testResources>
+			</build>
+		</profile>
 	</profiles>
 </project>

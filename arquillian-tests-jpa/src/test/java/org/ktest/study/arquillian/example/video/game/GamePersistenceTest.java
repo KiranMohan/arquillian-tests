@@ -31,6 +31,7 @@ public class GamePersistenceTest {
         Archive<?> archive = ShrinkWrap.create(WebArchive.class, "test.war")
             .addPackage(Game.class.getPackage())
             .addAsResource("test-persistence.xml", "META-INF/persistence.xml")
+            .addAsWebInfResource("jbossas-ds.xml")
             .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml");
         //System.out.println(archive.toString(true));
         return archive;
